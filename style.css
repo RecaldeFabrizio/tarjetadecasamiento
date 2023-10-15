@@ -145,5 +145,80 @@ body{
    display: flex;
    font-size: 40px;
    justify-content: center;
+   color: #e9a5a5;
+}
+
+ /*                                                                   Lista de regalos                                                             */
+
+ .list{
+   width: 100%;
+   height: 100vh;
+   background-size: cover;
+   background-position: center;
+ }
+
+ .lista h1{
+   width: 100%;
+   margin-top: 150px;
+   position: absolute;
+   background-size: cover;
+   background-position: center;
+   transform: translateY(-50%);
+   text-align: center;
    color: #fff;
+ }
+
+ .listmp{
+   display: flex;
+   width: 50%;
+   margin-top: 350px;
+   position: absolute;
+   background-size: cover;
+   background-position: right;
+   text-align: center;
+   color: #fff;
+ }
+
+ .listrega{
+   display: flex;
+   flex-direction: column;
+   margin-left: 50%;
+   margin-top: 350px;
+   width: 50%;
+   position: absolute;
+   background-size: cover;
+   background-position: center;
+   text-align: center;
+ }
+
+ .listrega h1{
+   font-size: 70px;
+   margin: 50px;
+   margin-top: -50px;
+   color: #e9a5a5;
+ }
+
+ .listrega ul li{
+   list-style: none;
+    display:inline-flex;
+    margin: 5px 30px;
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+ }
+
+ .listrega ul li::after{
+   content: '';
+   height: 3px;
+   width: 0;
+   background: #e9a5a5;
+   position: absolute;
+   left: 0;
+   bottom: -5px;
+   transition: 0.5s;
+}
+
+.listrega ul li:hover::after{
+   width: 100%;
+
 }
